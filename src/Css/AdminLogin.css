@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css?family=Baloo+Paaji");
+
+.secti {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Baloo Paaji", cursive;
+  width: 100vw;
+  height: 100vh;
+  background-color: #3e3e3e;
+  color: #3e3e3e;
+}
+
+.admin {
+  display: flex;
+  align-items: center;
+  width: 450px;
+  height: 350px;
+  background-color: #ffffff;
+  border-radius: 50px;
+  position: relative;
+}
+
+.admin-lock {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  border: 5px solid #ffab00;
+  right: -40px;
+  top: 50%;
+  margin-top: -40px;
+  box-sizing: border-box;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  font-size: 50px;
+  color: #3e3e3e;
+  outline: none;
+  cursor: pointer;
+  transition: background-color 0.15s, color 0.15s;
+}
+
+.admin-lock:hover {
+  background-color: #3e3e3e;
+  color: #ffffff;
+}
+
+.admin-content {
+  border-radius: 50px;
+  width: 100%;
+  margin: 30px 70px 30px 30px;
+}
+
+.admin-content-header {
+  margin-top: 0;
+}
+
+.cred {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.cred-input {
+  margin-bottom: 20px;
+  outline: none;
+  padding: 10px;
+  border: 0;
+  background-color: #e1e1e1;
+  border-radius: 5px;
+  font-family: "Baloo Paaji", cursive;
+  width: 100%;
+  box-sizing: border-box;
+  transition: box-shadow 0.15s;
+}
+
+.cred-input input {
+  background-color: transparent;
+  border: none;
+  height: 100%;
+  width: 100%;
+  outline: none;
+  padding: 0;
+}
+
+.cred-input:focus {
+  box-shadow: none;
+}
+
+.cred-input:focus::placeholder {
+  opacity: 0;
+}
+
+.cred-submit {
+  border: 0;
+  font-family: "Baloo Paaji", cursive;
+  outline: none;
+  background-color: #e1e1e1;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+  width: 120px;
+  height: 50px;
+  border-radius: 25px;
+  transition: background-color 0.15s, color 0.15s, border 0.15s;
+}
+
+.cred-submit:hover {
+  background-color: #3e3e3e;
+  color: #ffffff;
+  border: 3px solid #ffab00;
+}
+.login_password {
+  display: flex;
+  height: 49px;
+}
+
+.eye_btn_ {
+  background-color: transparent;
+  border: none;
+}
+
+.invalid_user {
+  color: red;
+  font-weight: 400;
+  background-color: rgb(252, 219, 219);
+  text-align: left;
+  border-radius: 3px;
+  padding: 0.5rem;
+  font-size: 14px;
+  display: none;
+}
+
+.invalid_user_show {
+  display: block !important;
+}
+
+.null_user {
+  color: red;
+  font-weight: 400;
+  background-color: rgb(252, 219, 219);
+  text-align: left;
+  border-radius: 3px;
+  padding: 0.5rem;
+  font-size: 14px;
+  display: none;
+}
+
+.null_username {
+  color: red;
+  font-weight: 400;
+  background-color: rgb(252, 219, 219);
+  text-align: left;
+  border-radius: 3px;
+  padding: 0.5rem;
+  font-size: 14px;
+  display: none;
+}
+
+.invalid_data {
+  color: red;
+  font-weight: 400;
+  background-color: rgb(252, 219, 219);
+  text-align: left;
+  border-radius: 3px;
+  padding: 0.5rem;
+  font-size: 14px;
+  display: none;
+}

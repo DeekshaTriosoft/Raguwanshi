@@ -1,0 +1,547 @@
+.app-header__logo .logo-src {
+  background: url(../Assests/images/Raghuwanshihall.svg) !important;
+  background-size: contain;
+}
+
+.app-header.header-text-light .app-header__logo .logo-src {
+  background: url(../Assests/images/Raghuwanshihall.svg) !important;
+}
+
+.app-sidebar.sidebar-text-light .app-header__logo .logo-src {
+  background: url(../Assests/images/Raghuwanshihall.svg) !important;
+}
+
+.app-header__logo .logo-src {
+  width: 77% !important;
+  height: 55px !important;
+}
+
+.card-header-view {
+  display: flow !important;
+  height: auto !important;
+  padding-top: 10px;
+}
+
+.btn-actions-pane-right-float {
+  float: right !important;
+  place-self: center !important;
+  width: fit-content !important;
+}
+
+.condition_error {
+  color: red;
+  font-weight: 500;
+}
+
+.display_none {
+  display: none;
+}
+
+.width_height_50px {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+/* .modal {
+  position: absolute !important;
+} */
+
+.imgEditMaster {
+  width: 300px;
+  max-height: 300px;
+}
+
+.vertical-nav-menu li a {
+  text-decoration: none;
+}
+
+.vertical-nav-menu {
+  /* height: 550px;
+  max-height: 100%; */
+  overflow: auto;
+}
+
+.extra {
+  height: 100vh;
+  width: 100%;
+  padding: 4rem;
+  background-color: #d1d1d1;
+}
+
+.cardOne {
+  background-color: #ffffff;
+  padding: 1rem;
+  border: 1px solid #a3cada;
+}
+
+.cardOneDetails {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  border-left: 3px solid #da6e0b;
+  padding-left: 0.3rem;
+}
+
+.cardOneDetails p {
+  margin: 0;
+}
+
+/* --------------------------------------------------------------------------------------------------------- */
+
+.cardTwo {
+  background-color: #ffffff;
+  padding: 1rem;
+}
+
+.icon_right {
+  float: right;
+}
+
+.cardHot {
+  border: 1px solid #dd1212 !important;
+}
+
+.card-brageHot {
+  background-color: #dd1212 !important;
+}
+
+.cardCold {
+  border: 1px solid #0b33e7 !important;
+}
+
+.card-brageCold {
+  background-color: #0b33e7 !important;
+}
+
+.cardWarm {
+  border: 1px solid #d65d16 !important;
+}
+
+.card-brageWarm {
+  background-color: #d65d16 !important;
+}
+
+.cardGreen {
+  border: 1px solid #47d424 !important;
+}
+
+.card-brageGreen {
+  background-color: #47d424 !important;
+}
+
+.cardNeutral {
+  border: 1px solid #9a9b99 !important;
+}
+
+.card-brageNeutral {
+  background-color: #9a9b99 !important;
+}
+
+.cardCancel {
+  border: 1px solid #ee0dc8 !important;
+}
+
+.card-brageCancel {
+  background-color: #ee0dc8 !important;
+}
+
+.cardtwodetailsBodyup {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.fontsize48_red {
+  margin: 0 !important;
+}
+
+.cardtwodetailsBodyup h6 {
+  margin: 0;
+  font-size: 15px;
+}
+
+.cardtwodetailsBodyup p {
+  color: #9c9c9c;
+}
+
+.cardtwodetailsBodylow p {
+  font-size: 13px;
+  color: #9c9c9c;
+}
+
+.cardtwodetailsBodylow {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.cardtwodetailsBodyFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cardtwodetailsBodyFooter p,
+.cardtwodetailsBodyFooter h6 {
+  margin: 0;
+  font-size: 15px;
+}
+
+.cardtwodetailsBodyFooter h6 {
+  cursor: pointer;
+}
+
+.float_right_show {
+  float: right;
+  font-weight: 600;
+}
+
+.min_center {
+  font-weight: 600;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------- */
+
+.passwordDiv {
+  position: relative;
+}
+
+.eye_btn_position {
+  position: absolute;
+  right: 8px;
+  top: 5px;
+}
+
+#myModal.modal-dialog {
+  box-shadow: none !important;
+}
+
+.go_to_login {
+  color: #ffffff !important;
+  font-weight: 500 !important;
+  transition: all 0.3s ease-in-out !important;
+}
+
+.cancelLogout {
+  background-color: #67d34c !important;
+}
+
+.confirmLogout {
+  background-color: #d84f4f !important;
+}
+
+.confirmLogout:hover {
+  background-color: #dd1212 !important;
+}
+
+.cancelLogout:hover {
+  background-color: #46d323 !important;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+.margine_left_30px {
+  margin-left: 30px !important;
+}
+
+.width_100_per {
+  width: 100%;
+}
+
+.margine_top_40px {
+  margin-top: 40px !important;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------ */
+
+.invoice_Parent_Container {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  /* background-color: #e1e1e1; */
+  width: fit-content;
+  position: relative;
+}
+
+/* .fullTable {
+  background-color: #e1e1e1;
+} */
+
+.invoice_Parent_Container .invoiceItemProperties {
+  font-size: 12px;
+  color: #5b5b5b;
+  font-weight: normal;
+  line-height: 1;
+  padding: 0 0px 7px 0;
+  text-align: left;
+}
+
+.invoice_Parent_Container .invoiceSection {
+  font-size: 21px;
+  color: #ff0000;
+  letter-spacing: -1px;
+  line-height: 1;
+  text-align: right;
+}
+
+.invoice_Parent_Container .invoiceOrderNumber {
+  font-size: 12px;
+  color: #555b5b;
+  line-height: 18px;
+  text-align: right;
+}
+
+.invoice_Parent_Container .invoiceThankyouMessage {
+  font-size: 12px;
+  color: #5b5b5b;
+  line-height: 18px;
+}
+
+.invoice_Parent_Container .itemData {
+  font-size: 12px;
+  color: #ff0000;
+  line-height: 18px;
+  padding: 10px 0;
+}
+
+td {
+  background-color: rgb(255, 255, 235);
+}
+
+.invoice_Parent_Container .finalBilling {
+  font-size: 12px;
+  color: #5b5b5b;
+  line-height: 22px;
+  text-align: end;
+}
+
+.invoice_Parent_Container .otherInformation {
+  font-size: 11px;
+  color: #5b5b5b;
+  text-align: right;
+}
+
+.printzbtn {
+  margin: 1.5rem auto;
+}
+
+.printzbtn button {
+  background-color: #406bd6;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.printzbtn button:hover {
+  background-color: #1e54dd;
+  color: #ffffff !important;
+}
+
+@media print {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .hideOnPrint {
+    display: none;
+  }
+
+  .invoice_Parent_Container {
+    display: block !important;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.fontsize48_red {
+  --bs-btn-padding-x: 0.75rem;
+  --bs-btn-padding-y: 0.375rem;
+  --bs-btn-font-family: ;
+  --bs-btn-font-size: 1rem;
+  --bs-btn-font-weight: 400;
+  --bs-btn-line-height: 1.5;
+  --bs-btn-color: var(--bs-body-color);
+  --bs-btn-bg: transparent;
+  --bs-btn-border-width: var(--bs-border-width);
+  --bs-btn-border-color: transparent;
+  --bs-btn-border-radius: var(--bs-border-radius);
+  --bs-btn-hover-border-color: transparent;
+  --bs-btn-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15),
+    0 1px 1px rgba(0, 0, 0, 0.075);
+  --bs-btn-disabled-opacity: 0.65;
+  --bs-btn-focus-box-shadow: 0 0 0 0.25rem rgba(var(--bs-btn-focus-shadow-rgb), 0.5);
+  display: inline-block;
+  padding: var(--bs-btn-padding-y) var(--bs-btn-padding-x);
+  font-size: var(--bs-btn-font-size);
+  font-weight: var(--bs-btn-font-weight);
+  line-height: var(--bs-btn-line-height);
+  color: var(--bs-btn-color);
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  user-select: none;
+  border: var(--bs-btn-border-width) solid var(--bs-btn-border-color);
+  border-radius: var(--bs-btn-border-radius);
+  background-color: var(--bs-btn-bg);
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-control {
+  appearance: auto !important;
+}
+
+.margin_right_13 {
+  margin-right: 13px;
+}
+
+.margin_left_13 {
+  margin-left: 13px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------------- */
+
+.chkboxscards {
+  display: flex;
+  align-items: center;
+}
+
+.chkboxscards label {
+  margin-bottom: 0;
+  white-space: nowrap;
+}
+
+.chkboxscardsADDAction {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #fafafa;
+  padding: 1rem 2rem;
+  width: 100%;
+}
+
+.chkboxscardsHead {
+  background-color: #eaf9ff;
+  padding: 1rem 2rem;
+  width: 300px;
+  display: flex;
+  align-items: center;
+}
+
+.cardtwodetails .dropdown-toggle:empty::after {
+  display: none !important;
+}
+
+.display_flex {
+  display: flex;
+}
+
+.width_33_per {
+  width: 33% !important;
+}
+
+.red_show {
+  color: red;
+  font-weight: 800;
+}
+
+.widget-content .widget-content-wrapper {
+  width: 100%;
+}
+
+.convert_booking {
+  color: #000;
+  font-weight: 500;
+}
+
+.any_ypdate {
+  color: rgb(15, 64, 224);
+  font-weight: 500;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+
+.dropdown-menu.show {
+  left: auto !important;
+  right: 0 !important;
+  top: 3px !important;
+}
+
+.list-group-item-action {
+  cursor: default !important;
+}
+
+.deletbtnAdmin img {
+  width: 1.4rem;
+}
+
+.deletbtnAdmin {
+  border-color: #d40000;
+  border: none;
+  border-radius: 5px;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.deletbtnAdmin p {
+  margin: 0;
+  color: #d40000;
+  font-size: 15px;
+}
+
+input[type="date"],
+input[type="time"],
+input[type="datetime-local"],
+input[type="month"] {
+  cursor: text;
+}
+
+@media (max-width: 991.98px) {
+  .app-header .app-header__mobile-menu {
+    order: 0 !important;
+  }
+}
+
+/* -------------------------------------------------------------------------------------------------------------- */
+
+.displayFlex1 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.displayFlex1 img {
+  width: 2.2rem;
+}
+
+.vertical-nav-menu i.metismenu-state-icon,
+.vertical-nav-menu i.metismenu-icon {
+  width: 20px !important;
+}
+
+.table-container-ddd {
+  width: 100%;
+  overflow-x: auto;
+}

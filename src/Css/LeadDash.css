@@ -1,0 +1,28 @@
+.app-main .app-main__outer {
+    width: 75% !important;
+}
+
+.OvrFlow {
+    overflow: auto;
+}
+
+.OvrFlow::-webkit-scrollbar {
+    width: 12px;
+
+}
+
+@media (max-width: 991.98px) {
+    .app-main .app-main__outer {
+        text-align: center;
+        width: 100% !important;
+    }
+}
+
+.app-main .app-main__inner {
+    margin-left: 20px;
+
+}
+
+.table>:not(caption)>*>* {
+    white-space: nowrap;
+}
