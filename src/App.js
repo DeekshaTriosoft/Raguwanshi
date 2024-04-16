@@ -11,7 +11,7 @@ import ImageDashboardAdd from "./Components/AdminPanel/ImageDashboardAdd";
 // import MenuDashboardView from "./Components/AdminPanel/MenuDashboardView";
 // import MenuDashboardAdd from "./Components/AdminPanel/MenuDashboardAdd";
 // import TestimonialDashboardView from "./Components/AdminPanel/TestimonialDashboardView";
-import WebsiteDashboardAdd from "./Components/AdminPanel/WebsiteDashboardAdd";
+// import WebsiteDashboardAdd from "./Components/AdminPanel/WebsiteDashboardAdd";
 // import TestimonialDashboardAdd from "./Components/AdminPanel/TestimonialDashboardAdd";
 // import TeamDashboardView from "./Components/AdminPanel/TeamDashboardView";
 // import TeamDashboardAdd from "./Components/AdminPanel/TeamDashboardAdd";
@@ -56,16 +56,13 @@ import Home from "./Components/Website/Home";
 import Gallery from "./Components/Website/Gallery";
 import Blog from "./Components/Website/Blog";
 import ScrollToTop from "./ScrollToTop";
-import CheckAvail from "./Components/Website/CheckAvail";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import ExtraPage from "./Components/Website/ExtraPage";
 import PageNotFound from "./Components/Website/404";
 import {
   server_post_data,
   seo_data_url,
 } from "./ServiceConnection/serviceconnection.js";
-// import EnquiryDashboardViewDetails from "./Components/AdminPanel/EnquiryDashboardViewDetails.js";
 function App() {
   const [SEOloop, setSEOloop] = useState([]);
   const match_and_return_seo_link_and_page = (
@@ -97,8 +94,6 @@ function App() {
       data_seo_link_final = <Home />;
     } else if (page_number === "3") {
       data_seo_link_final = <Gallery />;
-    } else if (page_number === "4") {
-      data_seo_link_final = <CheckAvail />;
     } else if (page_number === "5") {
       data_seo_link_final = <Blog />;
     }
@@ -120,16 +115,13 @@ function App() {
     handleFetchData();
     AOS.init();
   }, []);
-
+console.log(SEOloop)
   return (
     <BrowserRouter>
       <ScrollToTop />
       <Routes>
         {/* Website Pages */}
         <Route path="/" element={<Home />} />
-        <Route path="/Gallery" element={<Gallery />} />
-        <Route path="/BookHall" element={<CheckAvail />} />
-        <Route path="/ExtraPage" element={<ExtraPage />} />
         <Route path="/blog/blog_detail/:id" element={<Blog />} />
 
         {SEOloop.map((data, index) => {

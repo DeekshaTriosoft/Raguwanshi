@@ -33,7 +33,7 @@ function AdminHeader() {
       retrievedDataFind === null ||
       retrievedDataFind === "0"
     ) {
-      navigate("/adminlogin");
+      // navigate("/adminlogin");
     }
     if (retrivemsg !== "" && retrivemsg !== null && retrivemsg !== "0") {
       handleSuccess(retrivemsg, 1);

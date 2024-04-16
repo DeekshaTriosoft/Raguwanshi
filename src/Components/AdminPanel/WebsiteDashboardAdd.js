@@ -22,7 +22,7 @@ import { useLocation, Link } from "react-router-dom";
 import { retrieveData } from "../../LocalConnection/LocalConnection.js";
 function WebsiteDashboardAdd() {
   const location = useLocation();
-  const currentUrl = location.pathname.substring(1);
+  // const currentUrl = location.pathname.substring(1);
   const [editorDataMainID, setEditorDatMainID] = useState("0");
   const [editBlogData, seteditBlogData] = useState([]);
   const [showLoaderAdmin, setshowLoaderAdmin] = useState(false);

@@ -64,8 +64,8 @@ function ImageDashboardView() {
         if (Response.data.error) {
           handleError(Response.data.message);
         } else {
-          setsBlogData(Response.data.message.data_imagelink);
-          setsBlogImageLinkData(Response.data.message.data_link_image);
+          setsBlogData(Response.data.message);
+          setsBlogImageLinkData(APL_LINK);
         }
 
         setshowLoaderAdmin(false);
@@ -83,7 +83,7 @@ function ImageDashboardView() {
       fd.append("flag_for", "3");
       fd.append("for_status_final", "d");
       console.log(call_id);
-      await server_post_data(delete_update_data, fd)
+      await server_post_data('http://192.168.1.14:8000/api/auth/v1/Delete_Image_data/.', fd)
         .then((Response) => {
           setshowLoaderAdmin(false);
 
@@ -226,15 +226,15 @@ function ImageDashboardView() {
                       <thead>
                         <tr>
                           <th className="text-center">S.No</th>
-                          <th className="text-center">Entry D ate</th>
-                          <th className="text-center">Image Name</th>
+                          <th className="text-center">Entry Date</th>
                           <th className="text-center">Images</th>
+                          <th className="text-center">Image Name</th>
                           <th className="text-center">Link</th>
                           <th className="text-center">Action</th>
                         </tr>
                       </thead>
                       <tbody>
-                        {BlogData.map((blogddd, index) => (
+                        {!BlogData?[] :  BlogData.map((blogddd, index) => (
                           <tr key={index}>
                             <td className="text-center text-muted">
                               {index + 1}
@@ -248,7 +248,7 @@ function ImageDashboardView() {
                                 className="width_height_50px"
                                 ref={linkRef}
                                 src={
-                                  APL_LINK + BlogImageLinkData + blogddd.images
+                                  APL_LINK +"/media/" + blogddd.images_name
                                 }
                               ></img>
                             </td>

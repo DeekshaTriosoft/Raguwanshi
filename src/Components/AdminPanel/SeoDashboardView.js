@@ -79,7 +79,7 @@ function SeoDashboardView() {
       fd.append("flag_for", "2");
       fd.append("for_status_final", "d");
       console.log(call_id);
-      await server_post_data(delete_update_data, fd)
+      await server_post_data('http://192.168.1.19:8000/api/auth/v1/Delete_Seo_Data/.', fd)
         .then((Response) => {
           setshowLoaderAdmin(false);
           console.log(Response.data);
@@ -94,6 +94,7 @@ function SeoDashboardView() {
         });
     }
   };
+  console.log(BlogData)
 
   return (
     <div className="app-container app-theme-white body-tabs-shadow fixed-header">
@@ -276,7 +277,7 @@ function SeoDashboardView() {
                                     >
                                       Edit
                                     </button>
-                                  </Link>
+                                  </Link> 
                                   <Link
                                     onClick={() =>
                                       master_data_action(blogddd.primary_id)

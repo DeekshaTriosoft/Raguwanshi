@@ -95,6 +95,7 @@ function SliderDashboardView() {
         });
     }
   };
+    // console.log(BlogData)
 
   return (
     <div className="app-container app-theme-white body-tabs-shadow fixed-header">
@@ -214,7 +215,7 @@ function SliderDashboardView() {
                         </tr>
                       </thead>
                       <tbody>
-                        {BlogData.map((blogddd, index) => (
+                      {!BlogData ? [] : BlogData.map((blogddd, index) => (
                           <tr key={index}>
                             <td className="text-center text-muted">
                               {index + 1}
@@ -296,6 +297,7 @@ function SliderDashboardView() {
                             </td>
                           </tr>
                         ))}
+
                       </tbody>
                     </table>
                   </div>

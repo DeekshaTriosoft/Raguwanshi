@@ -115,7 +115,6 @@ function AdminSidebar() {
           <ul class="vertical-nav-menu metismenu"><ul
               
               >
-                {match_and_return_seo_link("imageDashboardView") && (
                   <li>
                     <Link
                       onClick={() => handleLinkClick("/imageDashboardView")}
@@ -135,9 +134,6 @@ function AdminSidebar() {
                       Image Links
                     </Link>
                   </li>
-                )}
-
-                {match_and_return_seo_link("BlogDashboardView") && (
                   <li>
                     <Link
                       onClick={() => handleLinkClick("/BlogDashboardView")}
@@ -157,8 +153,7 @@ function AdminSidebar() {
                       Blogs
                     </Link>
                   </li>
-                )}
-                {match_and_return_seo_link("SeoDashboardView") && (
+    
                   <li>
                     <Link
                       onClick={() => handleLinkClick("/SeoDashboardView")}
@@ -178,7 +173,7 @@ function AdminSidebar() {
                       Seo Section
                     </Link>
                   </li>
-                )}
+  
               </ul>
           </ul>
         </div>

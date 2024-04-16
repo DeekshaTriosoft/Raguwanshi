@@ -38,20 +38,20 @@ function AdminLogin() {
             alert(Response.data.message);
           } else {
             console.log(Response.data);
-            if (Response.data.message.data_admin.length > 0) {
-              let Response_data = Response.data.message.data_admin[0];
-              let data_doctor_image = Response.data.message.data_admin_image;
-              if (Response_data.allow_access === "1") {
-                storeData("allow_access", Response_data.allow_access);
-                storeData("admin_email", Response_data.admin_email);
-                storeData("admin_name", Response_data.admin_name);
-                storeData("admin_profession", Response_data.admin_type);
-                storeData(
-                  "admin_image",
-                  APL_LINK + data_doctor_image + Response_data.admin_image
-                );
-                storeData("admin_image_single", Response_data.admin_image);
-                storeData("staff_id", Response_data.primary_id);
+            if (Response.data.message) {
+              let Response_data = Response.data.message;
+              // let data_doctor_image = Response.data.message.data_admin_image;
+              if (Response_data) {
+                // storeData("allow_access", Response_data.allow_access);
+                // storeData("admin_email", Response_data.admin_email);
+                // storeData("admin_name", Response_data.admin_name);
+                // storeData("admin_profession", Response_data.admin_type);
+                // storeData(
+                //   "admin_image",
+                //   APL_LINK + data_doctor_image + Response_data.admin_image
+                // );
+                // storeData("admin_image_single", Response_data.admin_image);
+                // storeData("staff_id", Response_data.primary_id);
                 navigate("/admindashboard");
               } else {
                 handleError("User is Invalid. Please try again.");
@@ -87,7 +87,7 @@ function AdminLogin() {
       navigate("/admindashboard");
     }
   }, [navigate]);
-
+console.log(login_to_superadmin)
   return (
     <section className="secti">
       <div className={showLoaderAdmin ? "loading_website" : ""}></div>

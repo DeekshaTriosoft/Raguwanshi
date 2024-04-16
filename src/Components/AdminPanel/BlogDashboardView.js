@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+  import React, { useEffect, useState } from "react";
 import AdminSidebar from "./AdminSidebar";
 import AdminFooter from "./AdminFooter";
 import AdminHeader from "./AdminHeader";
@@ -63,7 +63,7 @@ function BlogDashboardView() {
         if (Response.data.error) {
           handleError(Response.data.message);
         } else {
-          setsBlogData(Response.data.message.data_blog);
+          setsBlogData(Response.data.message);
         }
 
         setshowLoaderAdmin(false);
@@ -220,7 +220,7 @@ function BlogDashboardView() {
                         </tr>
                       </thead>
                       <tbody>
-                        {BlogData.map((blogddd, index) => (
+                      {!BlogData ? [] : BlogData.map((blogddd, index) => (
                           <tr key={index}>
                             <td className="text-center text-muted">
                               {index + 1}
@@ -242,7 +242,7 @@ function BlogDashboardView() {
                             <td className="text-center">
                               <img
                                 className="width_height_50px"
-                                src={blogddd.image_name}
+                                src={blogddd.image_url}
                               ></img>
                             </td>
 
