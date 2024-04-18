@@ -1,8 +1,8 @@
 import axios from "axios";
 
 const appauth_key = "Rahuwanshi@2029";
-// let APL_LINK = "http://192.168.1.17:8000"; // Actual api
-let APL_LINK = "http://192.168.1.19:8000"; // shivam sir api
+// let APL_LINK = "http://192.168.1.17:8000"; // Actual link
+let APL_LINK = "http://192.168.1.9:8000"; // shivam sir link
 // APL_LINK = "https://api.raghuvanshihall.com";
 let Website_URL = "https://www.raghuvanshihall.com/";
 let local_server_link_react = APL_LINK + "/api/auth/v1/";
@@ -19,6 +19,7 @@ const get_all_seo = local_server_link_react + "get_all_seo/";
 const save_update_imagelink =
   local_server_link_react + "Add_Image_data/";
 const get_all_imagelink = local_server_link_react + "Get_image_data/";
+const Delete_Image_data = local_server_link_react + "Delete_Image_data/";
 const save_update_menu = local_server_link_react + "save_update_menu/";
 const get_all_menu = local_server_link_react + "get_all_menu/";
 const save_update_website_data =
@@ -35,45 +36,6 @@ const save_update_usermaster =
 const save_assign_rights = local_server_link_react + "save_assign_rights/";
 const get_userright_data = local_server_link_react + "get_userright_data/";
 const get_all_leads = local_server_link_react + "get_all_leads/";
-// const get_all_subscribe = local_server_link_react + "get_all_subscribe/";
-// const save_update_testimonial =
-//   local_server_link_react + "save_update_testimonial/";
-// const get_all_testimonial = local_server_link_react + "get_all_testimonial/";
-// const save_update_team = local_server_link_react + "save_update_team/";
-// const get_all_team = local_server_link_react + "get_all_team/";
-
-// const save_update_hall = local_server_link_react + "save_update_hall/";
-// const get_all_hall = local_server_link_react + "get_all_hall/";
-// const save_update_landmark = local_server_link_react + "save_update_landmark/";
-// const get_all_landmark = local_server_link_react + "get_all_landmark/";
-// const save_update_event_timing =
-//   local_server_link_react + "save_update_event_timing/";
-// const get_all_event_timing = local_server_link_react + "get_all_event_timing/";
-
-// const save_update_event_listing =
-//   local_server_link_react + "save_update_event_listing/";
-// const get_all_event_listing =
-//   local_server_link_react + "get_all_event_listing/";
-// const save_update_gallerywebsite =
-//   local_server_link_react + "save_update_gallerywebsite/";
-// const get_all_gallerywebsite =
-//   local_server_link_react + "get_all_gallerywebsite/";
-// const get_all_staff = local_server_link_react + "get_all_staff/";
-// const save_update_staff = local_server_link_react + "save_update_staff/";
-// const save_update_main_lead =
-//   local_server_link_react + "save_update_main_lead/";
-// const get_all_main_lead = local_server_link_react + "get_all_main_lead/";
-
-// const save_again_date_remark =
-//   local_server_link_react + "save_again_date_remark/";
-// const confirm_enquiry = local_server_link_react + "confirm_enquiry/";
-// const get_all_customer_booking =
-//   local_server_link_react + "get_all_customer_booking/";
-// const save_amount_pay_remaing =
-//   local_server_link_react + "save_amount_pay_remaing/";
-
-// const feedback_online_link_main = feedback_online_link + "bad_bus_search_api";
-
 
 /**admin  panel */
 
@@ -85,12 +47,7 @@ const get_all_home_gallery =
 const seo_data_url = local_server_link_website + "get_seo_data/";
 const get_blog_details_url =
   local_server_link_website + "get_blog_details_url/";
-// const get_all_booking_data =
-//   local_server_link_website + "get_all_booking_data/";
-// const save_enquiry_website =
-//   local_server_link_website + "save_enquiry_website/";
 
-// const get_all_home_about = local_server_link_website + "get_all_home_about/";
 /**Website  panel */
 
 // Retrieving data
@@ -123,6 +80,7 @@ export {
   get_all_seo,
   save_update_imagelink,
   get_all_imagelink,
+  Delete_Image_data,
   save_update_menu,
   get_all_menu,
   save_update_website_data,
@@ -136,39 +94,12 @@ export {
   get_userright_data,
   update_assign_staff,
   get_all_leads,
-  // save_update_testimonial,
-  // get_all_testimonial,
-  // save_update_team,
-  // get_all_team,
-  // get_all_subscribe,
-  // save_update_hall,
-  // get_all_hall,
-  // save_update_event_timing,
-  // get_all_event_timing,
-  // save_update_event_listing,
-  // get_all_event_listing,
-  // save_update_gallerywebsite,
-  // get_all_gallerywebsite,
-  // save_update_staff,
-  // get_all_staff,
-  // get_all_main_lead,
-  // save_update_main_lead,
-  // save_again_date_remark,
-  // confirm_enquiry,
-  // get_all_customer_booking,
-  // save_amount_pay_remaing,
-  // feedback_online_link_main,
-  // save_update_landmark,
-  // get_all_landmark,
    /*Admin api */
   /**Website  panel */
   save_subscribe,
-  // get_all_booking_data,
-  // save_enquiry_website,
   get_all_home_front,
   seo_data_url,
   get_all_home_gallery,
-  // get_all_home_about,
   get_blog_details_url,
   /**Website  panel */
 };

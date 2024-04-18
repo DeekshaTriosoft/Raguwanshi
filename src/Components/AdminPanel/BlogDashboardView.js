@@ -243,7 +243,7 @@ function BlogDashboardView() {
                               <img
                                 className="width_height_50px"
                                 src={blogddd.image_url}
-                              ></img>
+                             alt="" ></img>
                             </td>
 
                             <td className="text-center">

@@ -6,6 +6,7 @@ import {
   APL_LINK,
   server_post_data,
   get_all_imagelink,
+  Delete_Image_data,
   delete_update_data,
 } from "../../ServiceConnection/serviceconnection.js";
 import {
@@ -83,7 +84,7 @@ function ImageDashboardView() {
       fd.append("flag_for", "3");
       fd.append("for_status_final", "d");
       console.log(call_id);
-      await server_post_data('http://192.168.1.14:8000/api/auth/v1/Delete_Image_data/.', fd)
+      await server_post_data(Delete_Image_data, fd)
         .then((Response) => {
           setshowLoaderAdmin(false);
 
